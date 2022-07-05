@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "factory_blocks",
+  "version": "${version}",
+
+  "name": "Factory Blocks Mod",
+  "description": "Adds Factory Blocks to Chisel Refabricated",
+  "authors": [
+    "slaincow"
+  ],
+  "contact":
+  {
+    "sources": "https://github.com/matthewperiut/factory-blocks",
+    "issues": "https://github.com/matthewperiut/factory-blocks/issues"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/factory_blocks/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.slaincow.factoryblocks.FactoryBlocksMod"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17",
+    "chisel": ">=1.4.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable_with_bottom",
+  "textures": {
+    "front": "factory_blocks:block/megacell/side",
+    "bottom": "factory_blocks:block/megacell/bottom",
+    "top": "factory_blocks:block/megacell/top",
+    "side": "factory_blocks:block/megacell/side"
+  }
+}

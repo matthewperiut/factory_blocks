@@ -1,0 +1,3 @@
+# Factory Blocks Mod
+An addon to [Chisel](https://github.com/matthewperiut/Chisel-Fabric) that adds Factory Blocks from the Original [Chisel Mod](https://github.com/Chisel-Team/Chisel)
+It is an extension of [Chisel Fabric Example Mod](https://github.com/matthewperiut/chisel-fabric-example-mod), and is an example that other people can use to understand how to add their own blocks to Chisel (Fabric).

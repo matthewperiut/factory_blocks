@@ -1,0 +1,8 @@
+
+{
+  "parent": "factory_blocks:block/fan",
+  "textures": {
+    "front": "factory_blocks:block/fan/fast",
+    "side": "factory_blocks:block/fan/fast"
+  }
+}
