@@ -2,11 +2,13 @@ package net.slaincow.factoryblocks.block;
 
 import com.matthewperiut.chisel.block.ChiselGroupLookup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.slaincow.factoryblocks.TooltipBlockItem;
 import net.slaincow.factoryblocks.block.fan.BaseFanBlock;
 import net.slaincow.factoryblocks.block.fan.MediumFanBlock;
@@ -25,13 +27,16 @@ public class RegisterBlocks
     private static void addFactoryBlock(Block block, String nameID, boolean include)
     {
         Identifier blockID = new Identifier(MODID, nameID);
-        Registry.register(Registry.BLOCK, blockID, block);
-        TooltipBlockItem BlockItem = new TooltipBlockItem(block, new FabricItemSettings().group(CHISEL_GROUP), nameID + ".tooltip");
+        Registry.register(Registries.BLOCK, blockID, block);
+        TooltipBlockItem BlockItem = new TooltipBlockItem(block, new FabricItemSettings(), nameID + ".tooltip");
+        ItemGroupEvents.modifyEntriesEvent(CHISEL_GROUP).register(content -> {
+            content.add(BlockItem);
+        });
         if(include)
             ChiselGroupLookup.addItemToGroup("factory", blockID);
         else
             BlockItem.debugMode();
-        Registry.register(Registry.ITEM, blockID, BlockItem);
+        Registry.register(Registries.ITEM, blockID, BlockItem);
     }
 
     public static final BaseFactoryBlock FACTORY_BASE = new BaseFactoryBlock(FabricBlockSettings.of(Material.METAL));
