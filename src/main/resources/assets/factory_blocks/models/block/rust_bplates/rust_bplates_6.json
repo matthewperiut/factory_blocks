@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "factory_blocks:block/ctm/rust_bplates/6",
+        "particle": "factory_blocks:block/rust_bplates"
+    }
+}

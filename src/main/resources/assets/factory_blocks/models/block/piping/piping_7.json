@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "factory_blocks:block/ctm/piping/7",
+        "particle": "factory_blocks:block/piping"
+    }
+}

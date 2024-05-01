@@ -1,5 +1,42 @@
 {
-  "variants": {
-    "": { "model": "factory_blocks:block/rust_bplates" }
-  }
+    "variants": {
+        "": [
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_1",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_2",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_3",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_4",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_5",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_6",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_7",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_8",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/rust_bplates/rust_bplates_9",
+                "weight": 1
+            }
+        ]
+    }
 }

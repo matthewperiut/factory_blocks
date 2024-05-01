@@ -1,5 +1,13 @@
 {
   "variants": {
     "": { "model": "factory_blocks:block/rusty_scaffold" }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "factory_blocks:block/ctm/rusty_scaffold/4",
+    "empty": "factory_blocks:block/ctm/rusty_scaffold/1",
+    "horizontal": "factory_blocks:block/ctm/rusty_scaffold/3",
+    "particle": "factory_blocks:block/ctm/rusty_scaffold/0",
+    "vertical": "factory_blocks:block/ctm/rusty_scaffold/2"
   }
 }

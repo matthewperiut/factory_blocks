@@ -42,7 +42,6 @@
     "factory_blocks:scaffold",
     "factory_blocks:piping",
     "factory_blocks:large_plating",
-
     "factory_blocks:fan_side",
     "factory_blocks:fan",
     "factory_blocks:fan_on",

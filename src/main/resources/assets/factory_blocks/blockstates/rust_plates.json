@@ -1,5 +1,13 @@
 {
   "variants": {
     "": { "model": "factory_blocks:block/rust_plates" }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "factory_blocks:block/ctm/rust_plates/4",
+    "empty": "factory_blocks:block/ctm/rust_plates/1",
+    "horizontal": "factory_blocks:block/ctm/rust_plates/3",
+    "particle": "factory_blocks:block/ctm/rust_plates/0",
+    "vertical": "factory_blocks:block/ctm/rust_plates/2"
   }
 }
