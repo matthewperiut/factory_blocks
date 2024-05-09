@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "factory_blocks:block/wopanel/wopanel_1",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/wopanel/wopanel_2",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/wopanel/wopanel_3",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/wopanel/wopanel_4",
+                "weight": 1
+            }
+        ]
+    }
+}

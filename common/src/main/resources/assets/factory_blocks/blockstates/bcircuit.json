@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": { "model": "factory_blocks:block/bcircuit" }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "factory_blocks:block/ctm/bcircuit/4",
+    "empty": "factory_blocks:block/ctm/bcircuit/1",
+    "horizontal": "factory_blocks:block/ctm/bcircuit/3",
+    "particle": "factory_blocks:block/ctm/bcircuit/0",
+    "vertical": "factory_blocks:block/ctm/bcircuit/2"
+  }
+}

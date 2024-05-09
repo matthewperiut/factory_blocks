@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": { "model": "factory_blocks:block/srust" }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "factory_blocks:block/ctm/srust/4",
+    "empty": "factory_blocks:block/ctm/srust/1",
+    "horizontal": "factory_blocks:block/ctm/srust/3",
+    "particle": "factory_blocks:block/ctm/srust/0",
+    "vertical": "factory_blocks:block/ctm/srust/2"
+  }
+}

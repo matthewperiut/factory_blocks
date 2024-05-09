@@ -1,0 +1,42 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "factory_blocks:block/piping/piping_1",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_2",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_3",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_4",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_5",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_6",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_7",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_8",
+                "weight": 1
+            },
+            {
+                "model": "factory_blocks:block/piping/piping_9",
+                "weight": 1
+            }
+        ]
+    }
+}

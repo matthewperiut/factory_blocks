@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "factory_blocks",
+	"version": "${version}",
+
+	"name": "Factory Blocks Mod",
+	"description": "Adds Factory Blocks to Chisel Reborn or Chipped",
+	"authors": [
+		"slaincow"
+	],
+	"contact":
+	{
+		"sources": "https://github.com/matthewperiut/factory_blocks",
+		"issues": "https://github.com/matthewperiut/factory_blocks/issues"
+	},
+
+	"license": "MIT",
+	"icon": "assets/factory_blocks/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.slaincow.factoryblocks.fabric.FactoryBlocksFabric"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "1.20.*",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,7 +1,0 @@
-
-{
-  "parent": "factory_blocks:block/fan",
-  "textures": {
-    "front": "factory_blocks:block/fan/malfunction"
-  }
-}

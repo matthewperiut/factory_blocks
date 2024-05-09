@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "factory_blocks:block/ctm/wgpanel/3",
-        "particle": "factory_blocks:block/wgpanel"
-    }
-}

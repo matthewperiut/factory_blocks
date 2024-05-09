@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "factory_blocks:block/rust_bplates"
-  }
-}

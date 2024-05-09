@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": { "model": "factory_blocks:block/bwireframe" }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "factory_blocks:block/ctm/bwireframe/4",
+    "empty": "factory_blocks:block/ctm/bwireframe/1",
+    "horizontal": "factory_blocks:block/ctm/bwireframe/3",
+    "particle": "factory_blocks:block/ctm/bwireframe/0",
+    "vertical": "factory_blocks:block/ctm/bwireframe/2"
+  }
+}

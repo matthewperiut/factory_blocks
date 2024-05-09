@@ -1,0 +1,8 @@
+{
+  "type": "chipped:workbench",
+  "ingredients": [
+    {
+      "tag": "factory_blocks:factory"
+    }
+  ]
+}
