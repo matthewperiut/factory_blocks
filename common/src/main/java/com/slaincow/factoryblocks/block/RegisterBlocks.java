@@ -14,13 +14,14 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-import static com.matthewperiut.chisel.block.GeneratedRegister.MANAGER;
+import java.util.ArrayList;
+
 import static com.slaincow.factoryblocks.FactoryBlocksMod.MODID;
 
 public class RegisterBlocks
@@ -39,6 +40,8 @@ public class RegisterBlocks
         addFactoryBlock(nameID, type,true);
     }
 
+    public static ArrayList<RegistrySupplier<Item>> itemSuppliers = new ArrayList<>();
+
     private static void addFactoryBlock(String nameID, Type type, boolean include)
     {
         Identifier blockID = new Identifier(MODID, nameID);
@@ -54,15 +57,7 @@ public class RegisterBlocks
         }
 
         Registrar<Item> items = MANAGER.get().get(Registries.ITEM);
-        RegistrySupplier<Item> itemSupplier = items.register(blockID, () -> new TooltipBlockItem(blockSupplier.get(), new Item.Settings(), nameID + ".tooltip"));
-
-
-        if(FactoryBlocksMod.ChiselDetected) {
-            if(!include)
-                ((TooltipBlockItem)itemSupplier.get()).debugMode();
-            else
-                ChiselSupport.addFactoryBlockToChisel(blockSupplier.get(), nameID, include, blockID, (TooltipBlockItem) itemSupplier.get());
-        }
+        itemSuppliers.add(items.register(blockID, () -> new TooltipBlockItem(blockSupplier.get(), new Item.Settings().arch$tab(ItemGroups.BUILDING_BLOCKS), nameID + ".tooltip")));
     }
 
     public static void register()

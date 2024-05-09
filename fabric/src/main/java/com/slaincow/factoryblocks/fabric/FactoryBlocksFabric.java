@@ -7,6 +7,7 @@ import net.fabricmc.loader.api.FabricLoader;
 public class FactoryBlocksFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        FactoryBlocksMod.init(FabricLoader.getInstance().isModLoaded("chisel"));
+        FactoryBlocksMod.init();
+        FactoryBlocksMod.post(FabricLoader.getInstance().isModLoaded("chisel"));
     }
 }

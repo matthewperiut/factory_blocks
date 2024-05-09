@@ -6,13 +6,12 @@ import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 
 public class ChiselSupport {
-    public static void addFactoryBlockToChisel(Block block, String nameID, boolean include, Identifier blockID, TooltipBlockItem BlockItem)
+    public static void addFactoryBlockToChisel(Identifier blockID)
     {
-        /* todo:
-        ItemGroupEvents.modifyEntriesEvent(CHISEL_GROUP).register(content -> {
-            content.add(BlockItem);
-        });*/
-        if (include)
+        try {
             ChiselGroupLookup.addItemToGroup("factory", blockID);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
