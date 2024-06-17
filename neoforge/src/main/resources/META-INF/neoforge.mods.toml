@@ -1,0 +1,29 @@
+modLoader="javafml" #mandatory
+loaderVersion="[2,)" #mandatory
+license="MIT"
+issueTrackerURL = "https://github.com/matthewperiut/Chisel-Reborn/issues"
+
+[[mods]]
+modId = "factory_blocks"
+version = "${version}"
+displayName = "Factory Blocks"
+authors = "slaincow"
+description = '''
+Adds Factory Blocks to Chisel Reborn or Chipped
+'''
+logoFile = "assets/factory_blocks/icon.png"
+
+[[dependencies.chisel]]
+modId="minecraft"
+type="required"
+versionRange="[1.21]"
+
+[[dependencies.chisel]]
+modId="neoforge"
+type="required"
+versionRange="[0,)"
+
+[[dependencies.chisel]]
+modId="architectury"
+type="required"
+versionRange="[0,)"

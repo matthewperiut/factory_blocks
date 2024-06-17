@@ -2,12 +2,10 @@ package com.slaincow.factoryblocks.block;
 
 import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
-import com.slaincow.factoryblocks.FactoryBlocksMod;
 import com.slaincow.factoryblocks.TooltipBlockItem;
 import com.slaincow.factoryblocks.block.fan.BaseFanBlock;
 import com.slaincow.factoryblocks.block.fan.MediumFanBlock;
 import com.slaincow.factoryblocks.block.fan.RedstoneFanBlock;
-import com.slaincow.factoryblocks.optional.ChiselSupport;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrarManager;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -15,7 +13,6 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
@@ -44,7 +41,7 @@ public class RegisterBlocks
 
     private static void addFactoryBlock(String nameID, Type type, boolean include)
     {
-        Identifier blockID = new Identifier(MODID, nameID);
+        Identifier blockID = Identifier.of(MODID, nameID);
 
         Registrar<Block> blocks = MANAGER.get().get(Registries.BLOCK);
         RegistrySupplier<Block> blockSupplier;
