@@ -16,10 +16,7 @@ subprojects {
 
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
-        mappings loom.layered {
-            it.mappings "net.fabricmc:yarn:${rootProject.yarn_mappings}:v2"
-            it.mappings("dev.architectury:yarn-mappings-patch-neoforge:1.20.6+build.4")
-        }
+        mappings "net.fabricmc:yarn:${rootProject.yarn_mappings}:v2"
         //modRuntimeOnly group: "earth.terrarium.athena", name: "athena-$project.name-$minecraft_version", version: athena_version
 
         modCompileOnly files("../lib/chisel-1.6.jar")
