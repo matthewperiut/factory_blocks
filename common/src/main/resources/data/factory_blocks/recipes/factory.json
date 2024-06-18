@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "factory_blocks:factory",
+    "id": "factory_blocks:factory",
     "count": 32
   }
 }
