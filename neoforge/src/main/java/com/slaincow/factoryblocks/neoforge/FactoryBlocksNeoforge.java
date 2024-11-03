@@ -11,7 +11,6 @@ public class FactoryBlocksNeoforge
 {
     public FactoryBlocksNeoforge(IEventBus modEventBus)
     {
-        // Submit our event bus to let architectury register our content on the right time
         FactoryBlocksMod.init();
         modEventBus.addListener(this::commonSetup);
     }
