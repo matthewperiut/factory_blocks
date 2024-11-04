@@ -31,11 +31,15 @@ configurations {
     developmentNeoForge.extendsFrom common
 }
 
+repositories {
+    maven { url "https://maven.neoforged.net/" }
+}
+
 dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-neoforge:${rootProject.architectury_version}"
-    
+
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
 }
@@ -79,6 +83,10 @@ publishing {
             artifactId = rootProject.archives_base_name + "-" + project.name
             from components.java
         }
+    }
+
+    base {
+        archivesName = rootProject.archives_base_name + "-neoforge-" + minecraft_version
     }
 
     // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.

@@ -15,6 +15,8 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
@@ -42,19 +44,21 @@ public class RegisterBlocks
     private static void addFactoryBlock(String nameID, Type type, boolean include)
     {
         Identifier blockID = Identifier.of(MODID, nameID);
+        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, blockID);
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, blockID);
 
         Registrar<Block> blocks = MANAGER.get().get(Registries.BLOCK);
         RegistrySupplier<Block> blockSupplier;
 
         switch (type) {
-            default -> blockSupplier = blocks.register(blockID, () -> new BaseFactoryBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
-            case baseFan -> blockSupplier = blocks.register(blockID, () -> new BaseFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
-            case redFan -> blockSupplier = blocks.register(blockID, () -> new RedstoneFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
-            case mediumFan -> blockSupplier = blocks.register(blockID, () -> new MediumFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+            default -> blockSupplier = blocks.register(blockID, () -> new BaseFactoryBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
+            case baseFan -> blockSupplier = blocks.register(blockID, () -> new BaseFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
+            case redFan -> blockSupplier = blocks.register(blockID, () -> new RedstoneFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
+            case mediumFan -> blockSupplier = blocks.register(blockID, () -> new MediumFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
         }
 
         Registrar<Item> items = MANAGER.get().get(Registries.ITEM);
-        itemSuppliers.add(items.register(blockID, () -> new TooltipBlockItem(blockSupplier.get(), new Item.Settings().arch$tab(ItemGroups.BUILDING_BLOCKS), nameID + ".tooltip")));
+        itemSuppliers.add(items.register(blockID, () -> new TooltipBlockItem(blockSupplier.get(), new Item.Settings().arch$tab(ItemGroups.BUILDING_BLOCKS).registryKey(itemKey), nameID + ".tooltip")));
     }
 
     public static void register()
