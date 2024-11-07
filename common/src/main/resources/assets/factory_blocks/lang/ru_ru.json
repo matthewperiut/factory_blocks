@@ -1,0 +1,152 @@
+{
+  "item.factory_blocks.debug": "Debug Item (will be removed)",
+  "subtitles.factory_block.metal_sound": "Звук Металла",
+  "block.factory_blocks.test_block": "Test Block",
+
+  "block.factory_blocks.factory": "Фабричный блок",
+  "item.factory_blocks.factory.tooltip": "Пунктирная ржавая пластина",
+
+  "block.factory_blocks.rust": "Фабричный блок",
+  "item.factory_blocks.rust.tooltip": "Ржавая пластина",
+
+  "block.factory_blocks.vrust": "Фабричный блок",
+  "item.factory_blocks.vrust.tooltip": "Очень ржавая пластина",
+
+  "block.factory_blocks.srust": "Фабричный блок",
+  "item.factory_blocks.srust.tooltip": "Немного ржавая пластина",
+
+  "block.factory_blocks.wireframe": "Фабричный блок",
+  "item.factory_blocks.wireframe.tooltip": "Каркас",
+
+  "block.factory_blocks.pwireframe": "Фабричный блок",
+  "item.factory_blocks.pwireframe.tooltip": "Фиолетовый каркас",
+
+  "block.factory_blocks.hazard": "Фабричный блок",
+  "item.factory_blocks.hazard.tooltip": "Желто-черная предостерегающая лента",
+
+  "block.factory_blocks.hazardo": "Фабричный блок",
+  "item.factory_blocks.hazardo.tooltip": "Оранжево-белая предостерегающая лента",
+
+  "block.factory_blocks.circuit": "Фабричный блок",
+  "item.factory_blocks.circuit.tooltip": "Электросхема",
+
+  "block.factory_blocks.metalbox": "Фабричный блок",
+  "item.factory_blocks.metalbox.tooltip": "Металлическая коробка",
+
+  "block.factory_blocks.gcircuit": "Фабричный блок",
+  "item.factory_blocks.gcircuit.tooltip": "Позолоченная электросхема",
+
+  "block.factory_blocks.pgcircuit": "Фабричный блок",
+  "item.factory_blocks.pgcircuit.tooltip": "Позолоченная фиолетовая электросхема",
+
+  "block.factory_blocks.grinder": "Фабричный блок",
+  "item.factory_blocks.grinder.tooltip": "Точильщик",
+
+  "block.factory_blocks.old_vents": "Фабричный блок",
+  "item.factory_blocks.old_vents.tooltip": "Старая вентиляция",
+
+  "block.factory_blocks.rust_plates": "Фабричный блок",
+  "item.factory_blocks.rust_plates.tooltip": "Сегментированные ржавая пластины",
+
+  "block.factory_blocks.bcircuit": "Фабричный блок",
+  "item.factory_blocks.bcircuit.tooltip": "Электросхема в синей рамке",
+
+  "block.factory_blocks.ice": "Фабричный блок",
+  "item.factory_blocks.ice.tooltip": "Лёд Лёд Лёд",
+
+  "block.factory_blocks.mosaic": "Фабричный блок",
+  "item.factory_blocks.mosaic.tooltip": "Синяя электросхема",
+
+  "block.factory_blocks.bwireframe": "Фабричный блок",
+  "item.factory_blocks.bwireframe.tooltip": "Синий каркас",
+
+  "block.factory_blocks.rusty_scaffold": "Фабричный блок",
+  "item.factory_blocks.rusty_scaffold.tooltip": "Ржавые Подмостки",
+
+  "block.factory_blocks.large_pipes": "Фабричный блок",
+  "item.factory_blocks.large_pipes.tooltip": "Большие трубы",
+
+  "block.factory_blocks.small_pipes": "Фабричный блок",
+  "item.factory_blocks.small_pipes.tooltip": "Маленькие трубы",
+
+  "block.factory_blocks.vent": "Фабричный блок",
+  "item.factory_blocks.vent.tooltip": "вентиляция",
+
+  "block.factory_blocks.gvent": "Фабричный блок",
+  "item.factory_blocks.gvent.tooltip": "Светящаяся вентиляция",
+
+  "block.factory_blocks.insulation": "Фабричный блок",
+  "item.factory_blocks.insulation.tooltip": "Теплоизоляция",
+
+  "block.factory_blocks.gears": "Фабричный блок",
+  "item.factory_blocks.gears.tooltip": "Шестерни и маховики",
+
+  "block.factory_blocks.caution": "Фабричный блок",
+  "item.factory_blocks.caution.tooltip": "Ржавый подмостки",
+
+  "block.factory_blocks.cables": "Фабричный блок",
+  "item.factory_blocks.cables.tooltip": "Кабели",
+
+  "block.factory_blocks.rust_bplates": "Фабричный блок",
+  "item.factory_blocks.rust_bplates.tooltip": "Ржавый болтированные пластины",
+
+  "block.factory_blocks.grate": "Фабричный блок",
+  "item.factory_blocks.grate.tooltip": "Решетка",
+
+  "block.factory_blocks.rgrate": "Фабричный блок",
+  "item.factory_blocks.rgrate.tooltip": "Ржавая решетка",
+
+  "block.factory_blocks.hex": "Фабричный блок",
+  "item.factory_blocks.hex.tooltip": "Массивный шестиугольник",
+
+  "block.factory_blocks.wgpanel": "Фабричный блок",
+  "item.factory_blocks.wgpanel.tooltip": "Экстремально проржавевшие панели",
+
+  "block.factory_blocks.wopanel": "Фабричный блок",
+  "item.factory_blocks.wopanel.tooltip": "Экстремально ржавые панели",
+
+  "block.factory_blocks.sturdy": "Фабричный блок",
+  "item.factory_blocks.sturdy.tooltip": "Прочный",
+
+  "block.factory_blocks.megacell": "Фабричный блок",
+  "item.factory_blocks.megacell.tooltip": "Баттарея Megacell",
+
+  "block.factory_blocks.exhaust": "Фабричный блок",
+  "item.factory_blocks.exhaust.tooltip": "Выхлопные трубы",
+
+  "block.factory_blocks.engineer": "Фабричный блок",
+  "item.factory_blocks.engineer.tooltip": "Инженерные трубы",
+
+  "block.factory_blocks.scaffold": "Фабричный блок",
+  "item.factory_blocks.scaffold.tooltip": "Большие ржавые подмостки",
+
+  "block.factory_blocks.piping": "Фабричный блок",
+  "item.factory_blocks.piping.tooltip": "Трубопровод",
+
+  "block.factory_blocks.large_plating": "Фабричный блок",
+  "item.factory_blocks.large_plating.tooltip": "Сырая пластина",
+
+  "block.factory_blocks.fan_side": "Фабричный блок",
+  "item.factory_blocks.fan_side.tooltip": "Гладкий металл",
+
+  "block.factory_blocks.fan": "Фабричный блок",
+  "item.factory_blocks.fan.tooltip": "Вентилятор (питается редстоуном)",
+
+  "block.factory_blocks.fan_on": "Фабричный блок",
+  "item.factory_blocks.fan_on.tooltip": "Вентилятор (всегда включён)",
+
+  "block.factory_blocks.fan_four": "Фабричный блок",
+  "item.factory_blocks.fan_four.tooltip": "Вентилятор (редстоуновый четырёхсторонний)",
+
+  "block.factory_blocks.fan_four_on": "Фабричный блок",
+  "item.factory_blocks.fan_four_on.tooltip": "Вентилятор (всегда включён четырёхсторонний)",
+
+  "block.factory_blocks.fan_malfunction": "Фабричный блок",
+  "item.factory_blocks.fan_malfunction.tooltip": "Вентилятор (редстоуновый неисправный)",
+
+  "block.factory_blocks.fan_malfunction_on": "Фабричный блок",
+  "item.factory_blocks.fan_malfunction_on.tooltip": "Вентилятор (всегда включён неисправный)",
+
+  "block.factory_blocks.medium_fan": "Фабричный блок",
+  "item.factory_blocks.medium_fan.tooltip": "Средний Вентилятор"
+}
