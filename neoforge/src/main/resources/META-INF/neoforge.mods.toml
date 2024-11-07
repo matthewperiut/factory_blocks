@@ -13,17 +13,17 @@ Adds Factory Blocks to Chisel Reborn or Chipped
 '''
 logoFile = "assets/factory_blocks/icon.png"
 
-[[dependencies.chisel]]
+[[dependencies.factory_blocks]]
 modId="minecraft"
 type="required"
 versionRange="[1.21,1.21.1]"
 
-[[dependencies.chisel]]
+[[dependencies.factory_blocks]]
 modId="neoforge"
 type="required"
 versionRange="[0,)"
 
-[[dependencies.chisel]]
+[[dependencies.factory_blocks]]
 modId="architectury"
 type="required"
 versionRange="[0,)"

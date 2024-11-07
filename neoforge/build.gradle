@@ -2,6 +2,10 @@ plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
 
+base {
+    archivesName = "factory_blocks-neoforge"
+}
+
 architectury {
     platformSetupLoomIde()
     neoForge()
