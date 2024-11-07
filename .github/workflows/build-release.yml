@@ -63,7 +63,7 @@ jobs:
             athena-ctm(required){modrinth:b1ZV3DIJ}{curseforge:841890}
             chisel-reborn(required)
 
-          version-resolver: latest # Defaults to selecting the latest compatible version of Minecraft, using the tag from the fabric.mod.json
+          game-version-filter: releases # Defaults to selecting the latest compatible version of Minecraft, using the tag from the fabric.mod.json
 
       - name: Upload neoforge artifacts
         uses: Kir-Antipov/mc-publish@v3.3
@@ -92,4 +92,4 @@ jobs:
             athena-ctm(required){modrinth:b1ZV3DIJ}{curseforge:841890}
             chisel-reborn(required)
 
-          version-resolver: latest # Defaults to selecting the latest compatible version of Minecraft, using the tag from the fabric.mod.json
+          game-version-filter: releases # Defaults to selecting the latest compatible version of Minecraft, using the tag from the fabric.mod.json
