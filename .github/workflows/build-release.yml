@@ -60,7 +60,6 @@ jobs:
           dependencies: |
             fabric-api(required)
             architectury-api(required)
-            athena-ctm(required){modrinth:b1ZV3DIJ}{curseforge:841890}
             chisel-reborn(required)
 
           game-version-filter: releases # Defaults to selecting the latest compatible version of Minecraft, using the tag from the fabric.mod.json
@@ -89,7 +88,6 @@ jobs:
 
           dependencies: |
             architectury-api(required)
-            athena-ctm(required){modrinth:b1ZV3DIJ}{curseforge:841890}
             chisel-reborn(required)
 
           game-version-filter: releases # Defaults to selecting the latest compatible version of Minecraft, using the tag from the fabric.mod.json
