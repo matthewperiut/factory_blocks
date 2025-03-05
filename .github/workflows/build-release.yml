@@ -35,6 +35,35 @@ jobs:
           echo "minecraft-version=${VERSIONS[0]}" >> "${GITHUB_OUTPUT}"
           echo "mod-version=${VERSIONS[1]}" >> "${GITHUB_OUTPUT}"
 
+      - name: Upload fabric artifacts
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: ht0eTMEs
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-featured: true
+
+          name: '[${{ steps.versions.outputs.minecraft-version }}] Fabric ${{ steps.versions.outputs.mod-version }}'
+          version: 'fabric-${{ steps.versions.outputs.minecraft-version }}-${{ steps.versions.outputs.mod-version }}'
+
+          curseforge-id: 640001
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+          files: |
+            fabric/build/libs/!(*-@(sources|dev|dev-shadow|javadoc).jar)
+
+          version-type: release
+
+          loaders: fabric quilt
+
+          dependencies: |
+            fabric-api(required)
+            architectury-api(required)
+            chisel-reborn(required)
+
+          game-version-filter: releases # Defaults to selecting the latest compatible version of Minecraft, using the tag from the fabric.mod.json
+
       - name: Upload forge artifacts
         uses: Kir-Antipov/mc-publish@v3.3
         with:
