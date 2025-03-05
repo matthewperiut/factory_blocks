@@ -20,12 +20,12 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.slaincow.factoryblocks.fabric.FactoryBlocksFabric"
+			"com.periut.factoryblocks.fabric.FactoryBlocksFabric"
 		]
 	},
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": ["1.21", "1.21.1"],
+		"minecraft": ["1.21", "1.21.1", "1.21.2"],
 		"fabric-api": "*"
 	},
 	"suggests": {
