@@ -20,7 +20,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.slaincow.factoryblocks.fabric.FactoryBlocksFabric"
+			"com.periut.factoryblocks.fabric.FactoryBlocksFabric"
 		]
 	},
 	"depends": {
