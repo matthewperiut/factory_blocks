@@ -1,0 +1,202 @@
+{
+  "item.factory_blocks.debug": "Debug Item (will be removed)",
+  "subtitles.factory_block.metal_sound": "Fémes hang",
+  "block.factory_blocks.test_block": "Teszt blokk",
+  "item.factory_blocks.test_block": "Teszt blokk",
+
+  "block.factory_blocks.factory": "Gyárblokk",
+  "item.factory_blocks.factory": "Gyárblokk",
+  "item.factory_blocks.factory.tooltip": "Pöttyös rozsdás lemez",
+
+  "block.factory_blocks.rust": "Gyárblokk",
+  "item.factory_blocks.rust": "Gyárblokk",
+  "item.factory_blocks.rust.tooltip": "Rozsdás lemez",
+
+  "block.factory_blocks.vrust": "Gyárblokk",
+  "item.factory_blocks.vrust": "Gyárblokk",
+  "item.factory_blocks.vrust.tooltip": "Nagyon rozsdás lemez",
+
+  "block.factory_blocks.srust": "Gyárblokk",
+  "item.factory_blocks.srust": "Gyárblokk",
+  "item.factory_blocks.srust.tooltip": "Kicsit rozsdás lemez",
+
+  "block.factory_blocks.wireframe": "Gyárblokk",
+  "item.factory_blocks.wireframe": "Gyárblokk",
+  "item.factory_blocks.wireframe.tooltip": "Váz",
+
+  "block.factory_blocks.pwireframe": "Gyárblokk",
+  "item.factory_blocks.pwireframe": "Gyárblokk",
+  "item.factory_blocks.pwireframe.tooltip": "Lila váz",
+
+  "block.factory_blocks.hazard": "Gyárblokk",
+  "item.factory_blocks.hazard": "Gyárblokk",
+  "item.factory_blocks.hazard.tooltip": "Sárga-fekete figyelmeztető csíkok",
+
+  "block.factory_blocks.hazardo": "Gyárblokk",
+  "item.factory_blocks.hazardo": "Gyárblokk",
+  "item.factory_blocks.hazardo.tooltip": "Narancssárga-fehér figyelmeztető csíkok",
+
+  "block.factory_blocks.circuit": "Gyárblokk",
+  "item.factory_blocks.circuit": "Gyárblokk",
+  "item.factory_blocks.circuit.tooltip": "Áramkör",
+
+  "block.factory_blocks.metalbox": "Gyárblokk",
+  "item.factory_blocks.metalbox": "Gyárblokk",
+  "item.factory_blocks.metalbox.tooltip": "Fémdoboz",
+
+  "block.factory_blocks.gcircuit": "Gyárblokk",
+  "item.factory_blocks.pgcircuit": "Gyárblokk",
+  "item.factory_blocks.gcircuit.tooltip": "Aranyozott áramkör",
+
+  "block.factory_blocks.pgcircuit": "Gyárblokk",
+  "item.factory_blocks.pgcircuit": "Gyárblokk",
+  "item.factory_blocks.pgcircuit.tooltip": "Aranykeretes lila áramkör",
+
+  "block.factory_blocks.grinder": "Gyárblokk",
+  "item.factory_blocks.grinder": "Gyárblokk",
+  "item.factory_blocks.grinder.tooltip": "Daráló",
+
+  "block.factory_blocks.old_vents": "Gyárblokk",
+  "item.factory_blocks.old_vents": "Gyárblokk",
+  "item.factory_blocks.old_vents.tooltip": "Régi szellőzőnyílások",
+
+  "block.factory_blocks.rust_plates": "Gyárblokk",
+  "item.factory_blocks.rust_plates": "Gyárblokk",
+  "item.factory_blocks.rust_plates.tooltip": "Szegmentált rozsdás lemezek",
+
+  "block.factory_blocks.bcircuit": "Gyárblokk",
+  "item.factory_blocks.bcircuit": "Gyárblokk",
+  "item.factory_blocks.bcircuit.tooltip": "Kék-keretes áramkör",
+
+  "block.factory_blocks.ice": "Gyárblokk",
+  "item.factory_blocks.ice": "Gyárblokk",
+  "item.factory_blocks.ice.tooltip": "Jég Jég Jég",
+
+  "block.factory_blocks.mosaic": "Gyárblokk",
+  "item.factory_blocks.mosaic": "Gyárblokk",
+  "item.factory_blocks.mosaic.tooltip": "Kék áramkör",
+
+  "block.factory_blocks.bwireframe": "Gyárblokk",
+  "item.factory_blocks.bwireframe": "Gyárblokk",
+  "item.factory_blocks.bwireframe.tooltip": "Kék váz",
+
+  "block.factory_blocks.rusty_scaffold": "Gyárblokk",
+  "item.factory_blocks.rusty_scaffold": "Gyárblokk",
+  "item.factory_blocks.rusty_scaffold.tooltip": "Rozsdás állványzat",
+
+  "block.factory_blocks.large_pipes": "Gyárblokk",
+  "item.factory_blocks.large_pipes": "Gyárblokk",
+  "item.factory_blocks.large_pipes.tooltip": "Nagy csövek",
+
+  "block.factory_blocks.small_pipes": "Gyárblokk",
+  "item.factory_blocks.small_pipes": "Gyárblokk",
+  "item.factory_blocks.small_pipes.tooltip": "Kis csövek",
+
+  "block.factory_blocks.vent": "Gyárblokk",
+  "item.factory_blocks.vent": "Gyárblokk",
+  "item.factory_blocks.vent.tooltip": "Szellőző",
+
+  "block.factory_blocks.gvent": "Gyárblokk",
+  "item.factory_blocks.gvent": "Gyárblokk",
+  "item.factory_blocks.gvent.tooltip": "Fénylő szellőző",
+
+  "block.factory_blocks.insulation": "Gyárblokk",
+  "item.factory_blocks.insulation": "Gyárblokk",
+  "item.factory_blocks.insulation.tooltip": "Szigetelés",
+
+  "block.factory_blocks.gears": "Gyárblokk",
+  "item.factory_blocks.gears": "Gyárblokk",
+  "item.factory_blocks.gears.tooltip": "Fogaskerekek és lendkerékek",
+
+  "block.factory_blocks.caution": "Gyárblokk",
+  "item.factory_blocks.caution": "Gyárblokk",
+  "item.factory_blocks.caution.tooltip": "Rozsdás állványzat",
+
+  "block.factory_blocks.cables": "Gyárblokk",
+  "item.factory_blocks.cables": "Gyárblokk",
+  "item.factory_blocks.cables.tooltip": "Kábelek",
+
+  "block.factory_blocks.rust_bplates": "Gyárblokk",
+  "item.factory_blocks.rust_bplates": "Gyárblokk",
+  "item.factory_blocks.rust_bplates.tooltip": "Rozsdás csavaros lemezek",
+
+  "block.factory_blocks.grate": "Gyárblokk",
+  "item.factory_blocks.grate": "Gyárblokk",
+  "item.factory_blocks.grate.tooltip": "Rács",
+
+  "block.factory_blocks.rgrate": "Gyárblokk",
+  "item.factory_blocks.rgrate": "Gyárblokk",
+  "item.factory_blocks.rgrate.tooltip": "Rozsdás rács",
+
+  "block.factory_blocks.hex": "Gyárblokk",
+  "item.factory_blocks.hex": "Gyárblokk",
+  "item.factory_blocks.hex.tooltip": "Hatalmas hatszögletű",
+
+  "block.factory_blocks.wgpanel": "Gyárblokk",
+  "item.factory_blocks.wgpanel": "Gyárblokk",
+  "item.factory_blocks.wgpanel.tooltip": "Extrémül rozsdás panelek",
+
+  "block.factory_blocks.wopanel": "Gyárblokk",
+  "item.factory_blocks.wopanel": "Gyárblokk",
+  "item.factory_blocks.wopanel.tooltip": "Extrémül rozsdás panelek",
+
+  "block.factory_blocks.sturdy": "Gyárblokk",
+  "item.factory_blocks.sturdy": "Gyárblokk",
+  "item.factory_blocks.sturdy.tooltip": "Merevített",
+
+  "block.factory_blocks.megacell": "Gyárblokk",
+  "item.factory_blocks.megacell": "Gyárblokk",
+  "item.factory_blocks.megacell.tooltip": "Akkumulátor megacella",
+
+  "block.factory_blocks.exhaust": "Gyárblokk",
+  "item.factory_blocks.exhaust": "Gyárblokk",
+  "item.factory_blocks.exhaust.tooltip": "Kipufogó lemez",
+
+  "block.factory_blocks.engineer": "Gyárblokk",
+  "item.factory_blocks.engineer": "Gyárblokk",
+  "item.factory_blocks.engineer.tooltip": "Mérnöki csövek",
+
+  "block.factory_blocks.scaffold": "Gyárblokk",
+  "item.factory_blocks.scaffold": "Gyárblokk",
+  "item.factory_blocks.scaffold.tooltip": "Nagy rozsdás állványzat",
+
+  "block.factory_blocks.piping": "Gyárblokk",
+  "item.factory_blocks.piping": "Gyárblokk",
+  "item.factory_blocks.piping.tooltip": "Csövek",
+
+  "block.factory_blocks.large_plating": "Gyárblokk",
+  "item.factory_blocks.large_plating": "Gyárblokk",
+  "item.factory_blocks.large_plating.tooltip": "Laza lemez",
+
+  "block.factory_blocks.fan_side": "Gyárblokk",
+  "item.factory_blocks.fan_side": "Gyárblokk",
+  "item.factory_blocks.fan_side.tooltip": "Csiszolt fém",
+
+  "block.factory_blocks.fan": "Gyárblokk",
+  "item.factory_blocks.fan": "Gyárblokk",
+  "item.factory_blocks.fan.tooltip": "Ventilátor (Redstone vezérelt)",
+
+  "block.factory_blocks.fan_on": "Gyárblokk",
+  "item.factory_blocks.fan_on": "Gyárblokk",
+  "item.factory_blocks.fan_on.tooltip": "Ventilátor (Mindig be)",
+
+  "block.factory_blocks.fan_four": "Gyárblokk",
+  "item.factory_blocks.fan_four": "Gyárblokk",
+  "item.factory_blocks.fan_four.tooltip": "Ventilátor (Redstone vezérelt négy oldalú)",
+
+  "block.factory_blocks.fan_four_on": "Gyárblokk",
+  "item.factory_blocks.fan_four_on": "Gyárblokk",
+  "item.factory_blocks.fan_four_on.tooltip": "Ventilátor (Mindig be négy oldalú)",
+
+  "block.factory_blocks.fan_malfunction": "Gyárblokk",
+  "item.factory_blocks.fan_malfunction": "Gyárblokk",
+  "item.factory_blocks.fan_malfunction.tooltip": "Ventilátor (Redstone hibás)",
+
+  "block.factory_blocks.fan_malfunction_on": "Gyárblokk",
+  "item.factory_blocks.fan_malfunction_on": "Gyárblokk",
+  "item.factory_blocks.fan_malfunction_on.tooltip": "Ventilátor (Mindig be hibás)",
+
+  "block.factory_blocks.medium_fan": "Gyárblokk",
+  "item.factory_blocks.medium_fan": "Gyárblokk",
+  "item.factory_blocks.medium_fan.tooltip": "Közepes ventilátor"
+}
