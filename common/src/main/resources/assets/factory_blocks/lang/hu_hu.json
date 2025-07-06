@@ -45,7 +45,7 @@
   "item.factory_blocks.metalbox.tooltip": "Fémdoboz",
 
   "block.factory_blocks.gcircuit": "Gyárblokk",
-  "item.factory_blocks.pgcircuit": "Gyárblokk",
+  "item.factory_blocks.gcircuit": "Gyárblokk",
   "item.factory_blocks.gcircuit.tooltip": "Aranyozott áramkör",
 
   "block.factory_blocks.pgcircuit": "Gyárblokk",
