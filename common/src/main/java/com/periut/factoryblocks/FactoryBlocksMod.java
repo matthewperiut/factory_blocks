@@ -2,10 +2,12 @@ package com.periut.factoryblocks;
 
 import com.periut.factoryblocks.block.RegisterBlocks;
 import com.periut.factoryblocks.optional.ChiselSupport;
-import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.function.Supplier;
 
 public class FactoryBlocksMod
 {
@@ -18,9 +20,12 @@ public class FactoryBlocksMod
 	}
 
 	public static void post(boolean chisel) {
+		RegisterBlocks.registerItemGroups();
 		if (chisel) {
-			for (RegistrySupplier<Item> supplier : RegisterBlocks.itemSuppliers) {
-				ChiselSupport.addFactoryBlockToChisel(supplier.get().arch$registryName());
+			for (Supplier<Item> supplier : RegisterBlocks.itemSuppliers) {
+				Item item = supplier.get();
+				Identifier id = net.minecraft.registry.Registries.ITEM.getId(item);
+				ChiselSupport.addFactoryBlockToChisel(id);
 			}
 		}
 	}

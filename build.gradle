@@ -1,5 +1,5 @@
 plugins {
-    id 'dev.architectury.loom' version '1.10-SNAPSHOT' apply false
+    id 'dev.architectury.loom' version '1.11-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
 }
@@ -55,13 +55,13 @@ subprojects {
         }
 
         if (project.name == "neoforge") {
-            modImplementation("maven.modrinth:chisel-reborn:neoforge-1.21.7-2.1.0")
-            modImplementation("maven.modrinth:cryonicconfig:neoforge-1.21.7-1.0.0")
+            modImplementation("maven.modrinth:chisel-reborn:neoforge-1.21.9-2.2.0")
+            modImplementation("maven.modrinth:cryonicconfig:neoforge-1.21.9-1.0.0")
         } else if (project.name == "fabric") {
-            modImplementation("maven.modrinth:chisel-reborn:fabric-1.21.7-2.1.0")
-            modImplementation("maven.modrinth:cryonicconfig:fabric-1.21.7-1.0.0")
+            modImplementation("maven.modrinth:chisel-reborn:fabric-1.21.9-2.2.0")
+            modImplementation("maven.modrinth:cryonicconfig:fabric-1.21.9-1.0.0")
         } else {
-            modImplementation("maven.modrinth:chisel-reborn:fabric-1.21.7-2.1.0")
+            modImplementation("maven.modrinth:chisel-reborn:fabric-1.21.9-2.2.0")
         }
     }
 

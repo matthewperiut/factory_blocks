@@ -1,32 +1,25 @@
 package com.periut.factoryblocks.block;
 
-import com.google.common.base.Supplier;
-import com.google.common.base.Suppliers;
 import com.periut.factoryblocks.TooltipBlockItem;
 import com.periut.factoryblocks.block.fan.BaseFanBlock;
 import com.periut.factoryblocks.block.fan.MediumFanBlock;
 import com.periut.factoryblocks.block.fan.RedstoneFanBlock;
-import dev.architectury.registry.registries.Registrar;
-import dev.architectury.registry.registries.RegistrarManager;
-import dev.architectury.registry.registries.RegistrySupplier;
+import com.periut.factoryblocks.platform.RegistryHelper;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
+import java.util.function.Supplier;
 
 import static com.periut.factoryblocks.FactoryBlocksMod.MODID;
 
 public class RegisterBlocks
 {
-    public static final Supplier<RegistrarManager> MANAGER = Suppliers.memoize(() -> RegistrarManager.get(MODID));
-
     enum Type {
         base,
         baseFan,
@@ -39,7 +32,7 @@ public class RegisterBlocks
         addFactoryBlock(nameID, type,true);
     }
 
-    public static ArrayList<RegistrySupplier<Item>> itemSuppliers = new ArrayList<>();
+    public static ArrayList<Supplier<Item>> itemSuppliers = new ArrayList<>();
 
     private static void addFactoryBlock(String nameID, Type type, boolean include)
     {
@@ -47,18 +40,23 @@ public class RegisterBlocks
         RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, blockID);
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, blockID);
 
-        Registrar<Block> blocks = MANAGER.get().get(Registries.BLOCK);
-        RegistrySupplier<Block> blockSupplier;
+        Supplier<Block> blockSupplier;
 
         switch (type) {
-            default -> blockSupplier = blocks.register(blockID, () -> new BaseFactoryBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
-            case baseFan -> blockSupplier = blocks.register(blockID, () -> new BaseFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
-            case redFan -> blockSupplier = blocks.register(blockID, () -> new RedstoneFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
-            case mediumFan -> blockSupplier = blocks.register(blockID, () -> new MediumFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
+            default -> blockSupplier = RegistryHelper.registerBlock(blockID, blockKey, () -> new BaseFactoryBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
+            case baseFan -> blockSupplier = RegistryHelper.registerBlock(blockID, blockKey, () -> new BaseFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
+            case redFan -> blockSupplier = RegistryHelper.registerBlock(blockID, blockKey, () -> new RedstoneFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
+            case mediumFan -> blockSupplier = RegistryHelper.registerBlock(blockID, blockKey, () -> new MediumFanBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).registryKey(blockKey)));
         }
 
-        Registrar<Item> items = MANAGER.get().get(Registries.ITEM);
-        itemSuppliers.add(items.register(blockID, () -> new TooltipBlockItem(blockSupplier.get(), new Item.Settings().arch$tab(ItemGroups.BUILDING_BLOCKS).registryKey(itemKey), nameID + ".tooltip")));
+        Supplier<Item> itemSupplier = RegistryHelper.registerItem(blockID, itemKey, () -> new TooltipBlockItem(blockSupplier.get(), new Item.Settings().registryKey(itemKey), nameID + ".tooltip"));
+        itemSuppliers.add(itemSupplier);
+    }
+
+    public static void registerItemGroups() {
+        for (Supplier<Item> itemSupplier : itemSuppliers) {
+            RegistryHelper.addToItemGroup(RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.ofVanilla("building_blocks")), itemSupplier.get());
+        }
     }
 
     public static void register()
