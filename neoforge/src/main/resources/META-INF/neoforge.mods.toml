@@ -16,7 +16,7 @@ logoFile = "assets/factory_blocks/icon.png"
 [[dependencies.factory_blocks]]
 modId="minecraft"
 type="required"
-versionRange="[1.21.9]"
+versionRange="[1.21.10]"
 
 [[dependencies.factory_blocks]]
 modId="neoforge"
